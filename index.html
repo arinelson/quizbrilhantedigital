@@ -2,7 +2,8 @@
 <html >
   <head>
     <title>Quiz | Brilhante Digital</title>
- 	<script type="text/javascript" language="javascript">
+    <meta charset="utf-8">
+    <script type="text/javascript" language="javascript">
 
     var inicio=confirm('Bem-Vindo ao Quiz do Brilhante Digital! Cique em OK para participar!');
     var sair = "<html><head><title>Voce nao quis participar</title></head><body>Obrigado pela sua resposta!<br></body></html>";
@@ -13,7 +14,7 @@
     var acertos=0; var erros=0; var respostas = new Array(); var p = new Array();var r = new Array();
     var t=10; //COLOQUE AQUI TOTAL DE PERGUNTAS DO QUIZ !!!!
     // LISTA DE PERGUNTAS
-    p[1] = "O que é um computador?\n\n1. Uma fruta\n2. Um computador\n3. Um ser humano\n4.Um extraterrestre.\n";
+    p[1] = "O que é um computador?\n\n1. Uma fruta\n2. Um computador\n3. Um ser humano\n4. Um extraterrestre.\n";
     r[1] = '2. Um computador';
     p[2] = "O que definimos aquilo como a parte lógica do computador é chamado de:\n\n1. Hardware\n2. Software\n3. Circuito Lógico\n4. Lógica\n";
     r[2] = '2. Software';
@@ -27,7 +28,7 @@
     r[6] = '3. São softwares';
     p[7] = "Complete a frase: 'Qualquer dispositivo que RECEBE dados ou informação é considerado um dispositivo de _________ '?\n\n1. Carro\n2. Geladeira\n3. Saída\n4. Entrada ";
     r[7] = '4. Entrada';
-    p[8] = "O comoutador possui componentes básicos para que a gente possa usá-lo, como o teclado, mouse e monitor. Esses componentes recebem o nome de:\n\n1. Hardware\n2. Software\n3. Programas\n4. Windows";
+    p[8] = "O computador possui componentes básicos para que a gente possa usá-lo, como o teclado, mouse e monitor. Esses componentes recebem o nome de:\n\n1. Hardware\n2. Software\n3. Programas\n4. Windows";
     r[8] = '1. Hardware';
     p[9] = "A impressora é um dispositivo comum nos computadores para imprimir coisas. Desse modo, ela é considerada como um:\n\n1. Software\n2. Dispositivo de saída\n3. Programa\n4. Dispositivo eletrodoméstico";
     r[9] = '2. Dispositivo de saída';
@@ -51,7 +52,7 @@
        if(respostas[o[i]]==r[o[i]]){respostas[o[i]]=certo;acertos++;}else{respostas[o[i]]=errado;erros++;}
      }
     //fim do quiz
-    document.write("Javascript Quiz:<br><br>Suas respostas:<br><br>");
+    document.write("<h1>Resultado do Quiz:</h1><br><br><h4>O resultado das questões:</h4>");
     document.write("<ol>");
     for(var i=1;i<=t;i++)
     {
@@ -59,14 +60,27 @@
     document.write("</ol>");
     document.write("<br>Total de acertos: "+acertos);
     document.write("<br>Total de erros: "+erros);
-    document.write("<br><br><input type=button value='Respostas' Onclick=javascript:if(document.getElementById('rp').style.display=='none'){document.getElementById('rp').style.display='block';}else{document.getElementById('rp').style.display='none';}>");
-    document.write("<br><div id='rp' class='rp' style='display:none;'><ol>");
+    document.write("<br><h3>Veja as respostas certas e confira no que você errou pra fazer de novo. Clique em RESPOSTAS.</h3><input type=button value='Respostas' Onclick=javascript:if(document.getElementById('rp').style.display=='none'){document.getElementById('rp').style.display='block';}else{document.getElementById('rp').style.display='none';}><br><br>");
+document.write("<br><br><h3>Preparado? Para recomeçar é só recarregar a página apertando a tecla F5 do teclado</h3>")
+    document.write("<br><br><br><div id='rp' class='rp' style='display:none;'><ol>");
     for(var i=1;i<=t;i++)
      { document.write("<li>"+p[o[i]]+"<br>R:"+r[o[i]]);}
     document.write("</ol></div>");
    }
   </script>
  </head>
+	<style>
+		h3,h2,h1{
+			
+			color: blue;
+			text-align: center;
+			border: 1px solid black;
+			background-color: ; 
+			
+			}
+
+	</style>
+
  <body>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
