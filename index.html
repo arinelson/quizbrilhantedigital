@@ -12,31 +12,37 @@
     //Inicio do quiz
     var certo = "<b>Correto!</b>"; var errado = "<b style='color:red;'>Errado!</b>";var o = new Array();
     var acertos=0; var erros=0; var respostas = new Array(); var p = new Array();var r = new Array();
-    var t=10; //COLOQUE AQUI TOTAL DE PERGUNTAS DO QUIZ !!!!
+    var t=13; //COLOQUE AQUI TOTAL DE PERGUNTAS DO QUIZ !!!!
     // LISTA DE PERGUNTAS
-    p[1] = "O que é um computador?\n\n1. Uma fruta\n2. Um computador\n3. Um ser humano\n4. Um extraterrestre.\n";
+    p[1] = "- O que é um computador?\n\n1. Uma fruta\n2. Um computador\n3. Um ser humano\n4. Um extraterrestre.\n";
     r[1] = '2. Um computador';
-    p[2] = "O que definimos aquilo como a parte lógica do computador é chamado de:\n\n1. Hardware\n2. Software\n3. Circuito Lógico\n4. Lógica\n";
+    p[2] = "- O que definimos aquilo como a parte lógica do computador é chamado de:\n\n1. Hardware\n2. Software\n3. Circuito Lógico\n4. Lógica\n";
     r[2] = '2. Software';
-    p[3] = "O que é o que é: 'Usamos bastante no computador, NÃO é um dispositivo de saída e tem um formato retangular'.?\n\n1. Mouse\n2. Monitor\n3. Computador\n4. Teclado\n";
+    p[3] = "- O que é o que é: 'Usamos bastante no computador, NÃO é um dispositivo de saída e tem um formato retangular'.?\n\n1. Mouse\n2. Monitor\n3. Computador\n4. Teclado\n";
     r[3] = '4. Teclado';
-    p[4] = "O tablet é um tipo de computador?\n\n1. Sim\n2. Não\n3. Talvez\n4. Nunca\n";
+    p[4] = "- O tablet é um tipo de computador?\n\n1. Sim\n2. Não\n3. Talvez\n4. Nunca\n";
     r[4] = '1. Sim';
-    p[5] = "O que é uma hardware?\n\n1. É a parte lógica do computador, ou seja, são os programas.\n2. É a parte física do computador\n3. É o que o computador faz quando liga.\n4. É quando o computador desliga.\n";
+    p[5] = "- O que é uma hardware?\n\n1. É a parte lógica do computador, ou seja, são os programas.\n2. É a parte física do computador\n3. É o que o computador faz quando liga.\n4. É quando o computador desliga.\n";
     r[5] = '2. É a parte física do computador';
-    p[6] = "O que esses nomes têm em comum: Facebook, Google, WhatsApp, Calculadora do computador?\n\n1. São dispositivos de entrada.\n2. São dispositivos de saída.\n3. São softwares\n4. São hardwares.\n";
+    p[6] = "- O que esses nomes têm em comum: Facebook, Google, WhatsApp, Calculadora do computador?\n\n1. São dispositivos de entrada.\n2. São dispositivos de saída.\n3. São softwares\n4. São hardwares.\n";
     r[6] = '3. São softwares';
-    p[7] = "Complete a frase: 'Qualquer dispositivo que RECEBE dados ou informação é considerado um dispositivo de _________ '?\n\n1. Carro\n2. Geladeira\n3. Saída\n4. Entrada ";
+    p[7] = "- Complete a frase: 'Qualquer dispositivo que RECEBE dados ou informação é considerado um dispositivo de _________ '?\n\n1. Carro\n2. Geladeira\n3. Saída\n4. Entrada ";
     r[7] = '4. Entrada';
-    p[8] = "O computador possui componentes básicos para que a gente possa usá-lo, como o teclado, mouse e monitor. Esses componentes recebem o nome de:\n\n1. Hardware\n2. Software\n3. Programas\n4. Windows";
+    p[8] = "- O computador possui componentes básicos para que a gente possa usá-lo, como o teclado, mouse e monitor. Esses componentes recebem o nome de:\n\n1. Hardware\n2. Software\n3. Programas\n4. Windows";
     r[8] = '1. Hardware';
-    p[9] = "A impressora é um dispositivo comum nos computadores para imprimir coisas. Desse modo, ela é considerada como um:\n\n1. Software\n2. Dispositivo de saída\n3. Programa\n4. Dispositivo eletrodoméstico";
+    p[9] = "- A impressora é um dispositivo comum nos computadores para imprimir coisas. Desse modo, ela é considerada como um:\n\n1. Software\n2. Dispositivo de saída\n3. Programa\n4. Dispositivo eletrodoméstico";
     r[9] = '2. Dispositivo de saída';
-    p[10] = "Uma caixinha de som do computador representa um ?\n\n1. Dispositivo de saída porque ele transmite algum resultado, que é o som\n2. Software\n3. Dispositivo de entrada porque recebe alguma informação e envia para o computador\n";
+    p[10] = "- Uma caixinha de som do computador representa um ?\n\n1. Dispositivo de saída porque ele transmite algum resultado, que é o som\n2. Software\n3. Dispositivo de entrada porque recebe alguma informação e envia para o computador\n";
     r[10] = '1. Dispositivo de saída porque ele transmite algum resultado, que é o som';
+    p[11] = "- O computador é dividido em duas partes. Quais são elas?\n\n1. Hardware e Software\n2. Mouse e Teclado\n3. Facebook e WhatsApp\n4. Monitor e Impressora\n";
+    r[11] = '1. Hardware e Software';
+    p[12] = "- Você está usando um aplicativo no seu celular, PORÉM do nada ele trava mas o seu celular não desliga, o aplicativo só para de funcionar. Isso é culpa do:\n\n1. Software\n2. Fantasma\n3. Hardware\n4. De quem tá usando o celular\n";
+    r[12] = '1. Hardware e Software';
+    p[13] = "- Quais desses objetos são tipos de computadores?\n\n1. Tablet, Celular e Caderno\n2. Livro, Notebook e Tablet\n3. Celular, Tablet e Notebook\n4. Caderno, Livro e Notebook\n";
+    r[13] = '3. Celular, Tablet e Notebook';
     //ADICIONE MAIS PERGUNTAS AQUI COPIANDO 2 EM 2 LINHAS: P[] = PERGUNTA R[] = RESPOSTA
      for(var i=1;i<=t;i++){o[i] = i;} //gera uma sequencia de t numeros
-     for(var i=1;i<=10;i++)          //embaralha a sequencia 10 vezes
+     for(var i=1;i<=13  ;i++)          //embaralha a sequencia 10 vezes
      {
       n=Math.round(t*(Math.random())); 
       m=Math.round(t*(Math.random()));
